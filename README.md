@@ -27,9 +27,9 @@ A sleek, responsive, and high-performance **Login & Sign-Up Interface** designed
 ## 🚀 Quick Start
 
 1. **Clone the repository:**
-   ```bash
+   
    git clone [https://github.com/laizoo-dev/geargrid-login-portal.git](https://github.com/laizoo-dev/geargrid-login-portal.git)
-   ```
+   
 
 2. **Navigate to project directory:**
     ```bash
