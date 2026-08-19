@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEARGRID | Access Portal</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Rajdhani & Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="card login-card border-0">
+            <div class="row g-0 position-relative">
+                
+                <!-- Left Overlay / Banner Section -->
+                <div class="col-lg-6 d-none d-lg-block position-relative bg-cover">
+                    <div class="overlay d-flex flex-column justify-content-between p-5 text-white">
+                        <div class="brand d-flex align-items-center">
+                            <i class="fa-solid fa-wrench fa-2x brand-icon me-3"></i>
+                            <span class="fs-3 fw-bold brand-text">GEARGRID</span>
+                        </div>
+                        <div class="hero-text">
+                            <h2 class="fw-bold mb-3 text-uppercase">Precision Auto Mechanics</h2>
+                            <p class="text-white-50 leading-relaxed">Access real-time vehicle diagnostics, schedule maintenance appointments, and manage garage invoices efficiently.</p>
+                        </div>
+                        <div class="footer-copy text-white-50 small">
+                            &copy; 2026 GEARGRID Performance Systems. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form Wrapper (Login & Signup) -->
+                <div class="col-lg-6 col-md-12 p-4 p-sm-5 d-flex flex-column justify-content-center bg-card-custom overflow-hidden">
+                    
+                    <!-- Form Switcher Radio Controls (Pure CSS Driven) -->
+                    <input type="radio" name="auth-toggle" id="toggle-login" checked class="d-none">
+                    <input type="radio" name="auth-toggle" id="toggle-signup" class="d-none">
+
+                    <!-- LOGIN FORM SECTION -->
+                    <div class="auth-form form-login">
+                        <div class="mb-4">
+                            <h3 class="fw-bold text-white mb-2">Welcome Back <i class="fa-solid fa-gears text-accent ms-1"></i></h3>
+                            <p class="text-white-50">Enter your credentials to access your dashboard</p>
+                        </div>
+
+                        <form>
+                            <div class="mb-4">
+                                <label class="form-label text-white-50 small text-uppercase fw-semibold">Email Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-text custom-input-icon"><i class="fa-regular fa-envelope"></i></span>
+                                    <input type="email" class="form-control custom-input" placeholder="mechanic@geargrid.com" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                    <label class="form-label text-white-50 small text-uppercase fw-semibold mb-0">Password</label>
+                                    <a href="#" class="text-accent text-decoration-none small">Forgot Password?</a>
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-text custom-input-icon"><i class="fa-solid fa-lock"></i></span>
+                                    <input type="password" class="form-control custom-input" placeholder="••••••••" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-4 form-check">
+                                <input type="checkbox" class="form-check-input custom-checkbox" id="rememberMe">
+                                <label class="form-check-label text-white-50 small" for="rememberMe">Remember this device</label>
+                            </div>
+
+<button type="submit" class="btn btn-login w-100 rounded-2 mb-3">
+                                <span class="button-label"><i class="fa-solid fa-right-to-bracket me-2"></i> LOG IN TO DASHBOARD</span>
+                                <span class="button-car" aria-hidden="true"><i class="fa-solid fa-car-side"></i></span>
+                            </button>
+                        </form>
+
+                        <div class="text-center mt-3">
+                            <p class="text-white-50 small mb-0">Don't have an account? 
+                                <label for="toggle-signup" class="text-accent fw-bold switch-btn">Create Account</label>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- SIGN UP FORM SECTION -->
+                    <div class="auth-form form-signup">
+                        <div class="mb-4">
+                            <h3 class="fw-bold text-white mb-2">Join GearGrid <i class="fa-solid fa-screwdriver-wrench text-accent ms-1"></i></h3>
+                            <p class="text-white-50">Create your workshop account in seconds</p>
+                        </div>
+
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label text-white-50 small text-uppercase fw-semibold">Full Name</label>
+                                <div class="input-group">
+                                    <span class="input-group-text custom-input-icon"><i class="fa-regular fa-user"></i></span>
+                                    <input type="text" class="form-control custom-input" placeholder="John Doe" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label text-white-50 small text-uppercase fw-semibold">Email Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-text custom-input-icon"><i class="fa-regular fa-envelope"></i></span>
+                                    <input type="email" class="form-control custom-input" placeholder="mechanic@geargrid.com" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label text-white-50 small text-uppercase fw-semibold">Password</label>
+                                <div class="input-group">
+                                    <span class="input-group-text custom-input-icon"><i class="fa-solid fa-lock"></i></span>
+                                    <input type="password" class="form-control custom-input" placeholder="••••••••" required>
+                                </div>
+                            </div>
+
+<button type="submit" class="btn btn-login w-100 rounded-2 mb-3">
+                                <span class="button-label"><i class="fa-solid fa-user-plus me-2"></i> CREATE ACCOUNT</span>
+                                <span class="button-car" aria-hidden="true"><i class="fa-solid fa-car-side"></i></span>
+                            </button>
+                        </form>
+
+                        <div class="text-center mt-3">
+                            <p class="text-white-50 small mb-0">Already have an account? 
+                                <label for="toggle-login" class="text-accent fw-bold switch-btn">Log In</label>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.auth-form form').forEach((form) => {
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const button = form.querySelector('.btn-login');
+                button.classList.remove('is-launching');
+                void button.offsetWidth;
+                button.classList.add('is-launching');
+                setTimeout(() => button.classList.remove('is-launching'), 950);
+            });
+        });
+    </script>
+</body>
+</html>
